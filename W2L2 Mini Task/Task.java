@@ -1,6 +1,5 @@
-package w2l2_mini_task;
 import java.util.Scanner;
-public class Main{
+public class Task{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String name;
@@ -14,6 +13,10 @@ public class Main{
         age = input.nextInt();
         System.out.print("Enter CGPAP: ");
         cgpa = input.nextDouble();
-        
+        System.out.println("Name: "+name);
+        System.out.println("ID: "+ id);
+        System.out.println("Age: "+age);
+        System.out.println("CGPA: "+cgpa);
+        input.close();
     }
 }
