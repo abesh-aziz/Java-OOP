@@ -12,6 +12,8 @@ public class Main{
         System.err.println("Remove space: "+str.trim());
         equals(name, str);
         same(name, str2);
+        String concat = name + " " + str2;
+        System.out.println("Concatenated String: "+concat);
         
     }
 
