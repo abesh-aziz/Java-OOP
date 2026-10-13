@@ -17,5 +17,15 @@ class FoodItem{
        System.out.println(name+ " | "+ "Tk "+price+" | "+"Qty "+quantity+ " | "+"Value "+stockvalue(price, quantity)); 
     }
 
+    void sell(int amount){
+        if(amount<=this.quantity){
+            System.out.println("Sold "+amount+" "+this.name);
+            this.quantity=this.quantity-amount;
+        }
+        else{
+            System.out.println("Not enough "+this.name+" in stock");
+        }
+    }
+
     
 }

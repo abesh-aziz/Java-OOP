@@ -7,7 +7,9 @@ public class FoodItemDemo{
         i2.printline(i2.name, i2.price, i2.quantity);
         i3.printline(i3.name, i3.price, i3.quantity);
         System.out.println("Total Stock Value: Tk "+(i1.stockvalue(i1.price, i1.quantity)+i2.stockvalue(i2.price, i2.quantity)+i3.stockvalue(i3.price, i3.quantity)));
-
+        i2.sell(5);
+        i3.sell(30);
+        i2.printline(i2.name, i2.price, i2.quantity);
 
     }
 }
