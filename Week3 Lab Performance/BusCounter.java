@@ -26,5 +26,7 @@ public class BusCounter {
         }
         System.out.println("Most seats left: "+trips[emptiest].getRoute());
         System.out.println("trips[3] seats left: "+trips[3].getSeatsLeft());
+        BusTrip.findByRoute(trips, "Uttara-DSC");
+        BusTrip.findByRoute(trips, "Banani-DSC");
     }
 }

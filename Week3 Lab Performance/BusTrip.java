@@ -53,4 +53,15 @@ class BusTrip{
     public void printInfo(){
         System.out.printf("%s %-12s Tk %3d seats left: %2d%n",  tripCode,route, fare, seatsLeft);
     }
+
+    static BusTrip findByRoute(BusTrip[] trips, String route){
+        for(int i=0; i<trips.length; i++){
+            if(trips[i].route.equals(route)){
+                trips[i].printInfo();
+                return trips[i];
+            }
+        }
+        System.out.println("No such route: "+route);
+        return null;
+    }
 }
