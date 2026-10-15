@@ -12,7 +12,8 @@ class BusTrip{
         this.fare=fare;
         this.capacity=capacity;
         tripCount++;
-        this.tripCode="BT-" + 200+tripCount;
+        this.tripCode="BT-" + (200+tripCount); //left to right
+        this.seatsLeft=capacity;
 
     }
 
@@ -50,6 +51,6 @@ class BusTrip{
     }
 
     public void printInfo(){
-        System.out.printf("%s %-12s Tk %3d seats left: %2dn", route, fare, seatsLeft);
+        System.out.printf("%s %-12s Tk %3d seats left: %2d%n",  tripCode,route, fare, seatsLeft);
     }
 }

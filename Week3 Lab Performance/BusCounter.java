@@ -11,8 +11,9 @@ public class BusCounter {
         trips[1].bookSeats(30);
         trips[2].bookSeats(8);
         
-        BusTrip busy= new BusTrip("Savar-DSC", 30, 20);
+        BusTrip busy= trips[3]; //reference creation;
         busy.bookSeats(20);
+        System.out.println("Total trips created: "+BusTrip.getTripCount());
         for(int i=0; i<trips.length;i++){
             trips[i].printInfo();
             total_rev=total_rev+trips[i].getRevenue();
