@@ -9,7 +9,7 @@ abstract class Pay{
     abstract double fee();
 
     void receipt(){
-        System.out.println("Paid Via: "+method()+ " ,Bill: "+amount+" , Fees: "+fee()+" Total: "+(amount+fee()));
+        System.out.println("Paid Via "+method()+ ", Bill: "+amount+", Fees: "+fee()+" Total: "+(amount+fee()));
     }
 }
 
