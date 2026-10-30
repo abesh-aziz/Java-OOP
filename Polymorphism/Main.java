@@ -23,6 +23,10 @@ class Circle extends Shape{
     @Override public String name(){
         return "Circle";
     }
+
+    public void castcheck(){
+        System.out.println("Downcasted objects can access this");
+    }
 }
 
 class Rectangle extends Shape{
@@ -56,6 +60,18 @@ public static void main(String[] args) {
         total=total+shapes[i].area();
     }
     System.out.println("Total Area: "+total);
+    System.out.println();
+    //Added casting    
+    Shape cast = new Circle(13); //upcasting
+    System.out.println(cast.area()); //calls the child class circle's overriden method
+    //cast.castcheck(); can't call child class methods
+    Circle casted = null;
+    if(cast instanceof Circle){//if cast is actually a child class object
+        casted = (Circle) cast;//downcasting
+    }
+    casted.castcheck();//downcasted object can call child class' methods
+    ((Circle)cast).castcheck();
+
 }
     
 
