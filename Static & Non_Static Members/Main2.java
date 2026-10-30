@@ -20,11 +20,11 @@ class Employee{
 
 public class Main2 {
     public static void main(String[] args) {
-        EmployeeE e1 = new EmployeeE("Abesh", 188);
-        EmployeeE e2 = new EmployeeE("John", 101);
+        Employee e1 = new Employee("Abesh", 188);
+        Employee e2 = new Employee("John", 101);
         e1.showinfo();;
         e2.showinfo();
-        System.out.println("Total number of objects: "+EmployeeE.count);
+        System.out.println("Total number of objects: "+Employee.count);
 
     }
 }
