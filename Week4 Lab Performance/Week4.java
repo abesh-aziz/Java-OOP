@@ -92,6 +92,6 @@ public class Week4{
 
         System.out.println();
         System.out.println("Number of students who scored above average: "+Student.aboveaverage(students, Student.averagemarks(students)));
-
+        input.close();
     }
 }
